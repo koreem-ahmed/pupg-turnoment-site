@@ -96,6 +96,29 @@ nav>img{
     width: 13vw;
 }
 
+.btn-n::before{
+    content: "";
+    width: 14vw;
+    height: 8vh;
+    position: absolute;
+    right: 70.4px;
+    top: 22px;
+    background: var(--bg-purple);
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    transform: scale(0);
+    transform: 500ms ease;
+}
+.btn-n{
+    z-index: 1;
+    place-items: center;
+    display: grid;
+}
+
+.btn-n:is(:hover, :focus-visible)::before{
+    transform: scale(1);
+}
+
 .side{
     width: 100vw;
     height: 0;
@@ -568,6 +591,19 @@ hr{
         margin-top: 20px;
     }
 }
+@media (max-width: 1024px) {
+    .btn-n::before{
+        right: 53.9px;
+    }
+    
+}
+
+@media (max-width: 900px){
+    .btn-n::before{
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .blog-cont{
         grid-template-columns: repeat(1, 1fr);
