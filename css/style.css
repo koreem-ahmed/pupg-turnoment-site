@@ -89,7 +89,7 @@ nav{
     top: 0;
     left: 0;
     background-color: var(--bg-oxford-blue);
-    z-index: 1;
+    z-index: 19029;
 }
 
 nav>img{
@@ -98,25 +98,26 @@ nav>img{
 
 .btn-n::before{
     content: "";
-    width: 14vw;
-    height: 8vh;
+    width: 8vw;
+    height: 8vw;
     position: absolute;
-    right: 70.4px;
-    top: 22px;
     background: var(--bg-purple);
     z-index: -1;
     transition: 0.5s ease-in-out;
     transform: scale(0);
     transform: 500ms ease;
+    border-radius: 50%;
 }
-.btn-n{
-    z-index: 1;
-    place-items: center;
-    display: grid;
+.btn-n:is(:hover, :focus-visible)::before{
+    transform: scale(4);
 }
 
-.btn-n:is(:hover, :focus-visible)::before{
-    transform: scale(1);
+.btn-n{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    z-index: 1;
 }
 
 .side{
@@ -167,6 +168,9 @@ nav>ul{
 nav>ul>li{
     font-size: 14px;
     font-weight: bold;
+}
+.lin{
+    transition: 0.3s ease-in-out;
 }
 nav>button{
     height: 8vh;
@@ -271,6 +275,7 @@ nav>button{
     font-weight: bold;
     color: white;
     margin-top: 20px;
+    margin-left: calc((100vw - 14vw) / 2);
 }
 hr{
     margin: 0;
@@ -366,7 +371,12 @@ hr{
     left: -15px;
 }
 .time>button{
-    width: 20%;
+    font-size: 35px;
+    color: white;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
 }
 .time>h1{
     font-size: 50px;
@@ -376,11 +386,10 @@ hr{
     font-size: 14px;
     margin: 0;
 }
-.time>button{
-    background: transparent;
-    border: none;
-    margin-top: 10px;
+.time>button:hover{
+    color: var(--text-purple);
 }
+
 .table>h2{
     font-size: 23px;
     margin-top: 110px;
@@ -410,7 +419,7 @@ hr{
     border-radius: 10px;
     padding-bottom: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    height: 78vh;
+    height: 85vh;
 }
 .blog:hover{
     background-color: var(--bg-oxford-blue-alpha-80);
@@ -477,7 +486,10 @@ hr{
     width: 90%;
     font-weight: 400;
 }
-.blog-text>button{
+.lin:hover{
+    color: var(--text-purple);
+}
+.blog-text>a>button{
     height: 6vh;
     width: 150px;
     background: transparent;
@@ -490,11 +502,23 @@ hr{
     justify-content: space-evenly;
     align-items: center;
 }
-.blog-text>button>div{
+.blog-text>a>button>div{
     background: var(--bg-purple);
     cursor: pointer;
     width: 26px;
     height: 5px;
+}
+.rd-m{
+    transition: 0.5s;
+}
+.rd-m>div{
+    transition: 0.5s;
+}
+.rd-m:hover{
+    color: var(--text-purple);
+}
+.rd-m:hover>div{
+    background: white;
 }
 .footer-cont{
     display: grid;

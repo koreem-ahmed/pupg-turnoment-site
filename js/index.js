@@ -9,15 +9,21 @@ window.addEventListener("scroll", function() {
         }, 450);
     }
 });
-document.querySelector(".to-top").addEverntListener("click", function(){
+function tt () {
     window.scrollTo({
         top:0 ,
         behavior: "smooth"
     })
-})
+}
 function open_nav() {
     document.querySelector(".side").classList.toggle("hig")
     document.querySelector(".bur1").classList.toggle("bur1r")
     document.querySelector(".bur2").classList.toggle("bur2r")
     document.querySelector(".bur3").classList.toggle("bur3r")
 }
+document.getElementById("yt-h").addEventListener("hover", function(){
+    document.getElementById("yt-h").scr="../imgs/youtube - Copy.png"
+})
+document.getElementById("tw-h").addEventListener("hover", function(){
+    document.getElementById("tw-h").scr="../imgs/twitter - Copy.png"
+})

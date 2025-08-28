@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <button class="to-top hide">
+    <button class="to-top hide" onclick="tt()">
         <img src="imgs/up-arrow.png" alt="">
     </button>
     
@@ -18,13 +19,13 @@
         <img src="imgs/logo.svg" alt="">
 
         <ul class="nav-m">
-            <li><a href="">HOME</a></li>
-            <li><a href="">TOURNAMENT</a></li>
-            <li><a href="">NEWS</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a class="lin" href="#home">HOME</a></li>
+            <li><a class="lin" href="#tour">TOURNAMENT</a></li>
+            <li><a class="lin" href="#news">NEWS</a></li>
+            <li><a class="lin" href="#contact">CONTACT</a></li>
         </ul>
 
-        <button class="nav-m btn-n"><p>join our team</p></button>
+        <button class="nav-m btn-n" onclick="window.location.href='#contact'">join our team</button>
 
         <button id="burger" onclick="open_nav()">
             <div class="bur1"></div>
@@ -35,20 +36,19 @@
 
     <div class="side">
         <ul>
-            <li><a href="">HOME</a></li>
+            <li><a href="#home">HOME</a></li>
             <hr>
-            <li><a href="">TOURNAMENT</a></li>
+            <li><a href="#tour">TOURNAMENT</a></li>
             <hr>
-            <li><a href="">NEWS</a></li>
+            <li><a href="#news">NEWS</a></li>
             <hr>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </div>
-
-    <main class="main">
+    <main class="main" id="home">
         <h2>E &nbsp; N &nbsp; J &nbsp; O &nbsp; Y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T &nbsp; H &nbsp; E &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; G &nbsp; A &nbsp; M &nbsp; E &nbsp; S</h2>
         <h1>Epic Games Made For <br> True Gamers!</h1>
-        <button>Joint with us</button>
+        <button class="btn-n" onclick="window.location.href='#contact'">Joint with us</button>
         <div class="hero-img-cont">
             <img class="img-hero1" src="imgs/hero-banner-bg.png" alt="">
             <img class="img-hero2" src="imgs/hero-banner.png" alt="">
@@ -56,7 +56,7 @@
         <hr>
     </main>
     
-    <section class="table">
+    <section class="table" id="tour">
         <h2>Upcoming Matches</h2>
         <h1>Battles Extreme <br> Masters <span>Tournament</span></h1>
         <p>Our success in creating business solutions is due in large part to our talented and highly committed team.</p>
@@ -68,7 +68,7 @@
                 <img src="imgs/team-logo-1.png" alt="">
                 <div>
                     <h1 class="team-name">Purple Death Cadets</h1>
-                    <button class="team-btn">Group 04 | Match 06th</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=tpPlKU4L4XI', '_blank')" class="team-btn btn-n">Group 04 | Match 06th</button>
                 </div>
             </div>
 
@@ -77,10 +77,10 @@
                 <h1>10:00</h1>
                 <p>25TH May 2024</p>
                 <button class="live">
-                    <img src="imgs/youtube.png" alt="">
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube" style="width: 20px;"></i></a>
                 </button>
                 <button class="live">
-                    <img src="imgs/twitch.png" alt="">
+                    <a href="https://www.twitch.tv" target="_blank"><i style="margin-left: 20px;" class="fa-brands fa-twitch"></i></a>
                 </button>
             </div>
 
@@ -88,7 +88,7 @@
             <div class="team2">
                 <div>
                     <h1 class="team-name">Trigger Brain Squad</h1>
-                    <button class="team-btn">Group 04 | Match 06th</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=tpPlKU4L4XI', '_blank')" class="team-btn btn-n">Group 04 | Match 06th</button>
                 </div>
                 <img src="imgs/team-logo-2.png" alt="">
             </div>
@@ -101,7 +101,7 @@
                 <img src="imgs/team-logo-3.png" alt="">
                 <div>
                     <h1 class="team-name">Purple Death Cadets</h1>
-                    <button class="team-btn">Group 04 | Match 06th</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=tpPlKU4L4XI', '_blank')" class="team-btn btn-n">Group 04 | Match 06th</button>
                 </div>
             </div>
 
@@ -110,10 +110,10 @@
                 <h1>10:00</h1>
                 <p>25TH May 2024</p>
                 <button class="live">
-                    <img src="imgs/youtube.png" alt="">
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube" style="width: 20px;"></i></a>
                 </button>
                 <button class="live">
-                    <img src="imgs/twitch.png" alt="">
+                    <a href="https://www.twitch.tv" target="_blank"><i style="margin-left: 20px;" class="fa-brands fa-twitch"></i></a>
                 </button>
             </div>
 
@@ -121,7 +121,7 @@
             <div class="team2">
                 <div>
                     <h1 class="team-name">Trigger Brain Squad</h1>
-                    <button class="team-btn">Group 04 | Match 06th</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=tpPlKU4L4XI', '_blank')" class="team-btn btn-n">Group 04 | Match 06th</button>
                 </div>
                 <img src="imgs/team-logo-4.png" alt="">
             </div>
@@ -135,7 +135,7 @@
                 <img src="imgs/team-logo-5.png" alt="">
                 <div>
                     <h1 class="team-name">Purple Death Cadets</h1>
-                    <button class="team-btn">Group 04 | Match 06th</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=tpPlKU4L4XI', '_blank')" class="team-btn btn-n">Group 04 | Match 06th</button>
                 </div>
             </div>
 
@@ -144,10 +144,10 @@
                 <h1>10:00</h1>
                 <p>25TH May 2024</p>
                 <button class="live">
-                    <img src="imgs/youtube.png" alt="">
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube" style="width: 20px;"></i></a>
                 </button>
                 <button class="live">
-                    <img src="imgs/twitch.png" alt="">
+                    <a href="https://www.twitch.tv" target="_blank"><i style="margin-left: 20px;" class="fa-brands fa-twitch"></i></a>
                 </button>
             </div>
 
@@ -155,7 +155,7 @@
             <div class="team2">
                 <div>
                     <h1 class="team-name">Trigger Brain Squad</h1>
-                    <button class="team-btn">Group 04 | Match 06th</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=tpPlKU4L4XI', '_blank')" class="team-btn btn-n">Group 04 | Match 06th</button>
                 </div>
                 <img src="imgs/team-logo-6.png" alt="">
             </div>
@@ -166,7 +166,7 @@
         <h1>News And <span>Headlines</span></h1>
         <p>Our success in creating business solutions is due in large part to our talented and highly committed team.</p>
 
-        <div class="blog-cont">
+        <div class="blog-cont" id="news">
             <div class="blog">
                 <div class="blog-img">
                     <button>BUSINESS</button>
@@ -182,9 +182,9 @@
                             <p>Elliot Alderson</p>
                         </li>
                     </ul>
-                    <h1>Innovative Business All Over The World.</h1>
-                    <h2>Financial experts support or help you to to find out which way you can raise your funds more...</h2>
-                    <button><div></div> READ MORE</button>
+                    <h1>Explosive Gaming Scene</h1>
+                    <h2>The gaiming industry continues to experience unprecedented growth as innovative technologies like advanced physics engines, ray tracing andimmersive destruction system.</h2>
+                    <a href="https://en.wikipedia.org/wiki/PUBG:_Battlegrounds" target="_blank"><button class="rd-m" style="margin-top: -10px;"><div></div> READ MORE</button></a>
                 </div>
             </div>
             <div class="blog">
@@ -202,9 +202,9 @@
                             <p>Elliot Alderson</p>
                         </li>
                     </ul>
-                    <h1>Innovative Business All Over The World.</h1>
-                    <h2>Financial experts support or help you to to find out which way you can raise your funds more...</h2>
-                    <button><div></div> READ MORE</button>
+                    <h1>Dark Fantasy Warrior</h1>
+                    <h2>The fantasy gaming sector has evolved into a billion-dollar industry where creative storytelling meets sophisiticated busness models.</h2>
+                    <a href="https://en.wikipedia.org/wiki/PUBG:_Battlegrounds" target="_blank"><button class="rd-m" style="margin-top: 50px;"><div></div> READ MORE</button></a>
                 </div>
             </div>
             <div class="blog">
@@ -222,20 +222,20 @@
                             <p>Elliot Alderson</p>
                         </li>
                     </ul>
-                    <h1>Innovative Business All Over The World.</h1>
-                    <h2>Financial experts support or help you to to find out which way you can raise your funds more...</h2>
-                    <button><div></div> READ MORE</button>
+                    <h1>Futuristic Adventure Team</h1>
+                    <h2>The space exploration gaming genre represents a frontier market where ambitios developers are securing accuracy with thrilling adventure gameplay.</h2>
+                    <a href="https://en.wikipedia.org/wiki/PUBG:_Battlegrounds" target="_blank"><button class="rd-m" style="margin-top: 30px;"><div></div> READ MORE</button></a>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="contact">
         <div class="footer-cont">
             <div class="footer-logo">
                 <img src="imgs/logo.svg" alt="">
                 <p>Our success in creating business solutions is due in large part to our talented and highly committed team.</p>
                 <div class="socials">
-                    <img src="imgs/youtube.png" alt="">
+                    <img id="yt-h" src="imgs/youtube.png" alt="">
                     <img src="imgs/instagram.png" alt="">
                     <img src="imgs/twitter.png" alt="">
                     <img src="imgs/facebook.png" alt="">
@@ -245,10 +245,10 @@
                 <h1>Quick Links</h1>
                 <div class="line"></div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Tournament</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a class="lin" href="">Home</a></li>
+                    <li><a class="lin" href="">Tournament</a></li>
+                    <li><a class="lin" href="">News</a></li>
+                    <li><a class="lin" href="">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -266,7 +266,7 @@
                 <div class="line"></div>
                 <div class="subscribe">
                     <input type="text" placeholder="Email">
-                    <button>Subscribe now</button>
+                    <button class="btn-n" onclick="document.location.reload()">Subscribe now</button>
                 </div>
             </div>
         </div>
